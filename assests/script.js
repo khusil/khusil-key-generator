@@ -12,6 +12,11 @@ function generatePassword(){
   var lowerArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   var numberArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   var characterArray = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')',];
+  var charactercount = promt ('how many characters you want between 8-128?');
+  var numbers = prompt ('how many numbers?');
+  var uppercase = prompt ('how many uppercase?');
+  var lowercase = prompt ('how many lowercase?');
+  var specialCharacters = prompt ('how many special characters?');
   
 }
 // Write password to the #password input

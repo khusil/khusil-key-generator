@@ -25,9 +25,10 @@ function generatePassword() {
   if (specialCharacters) {
     result = result.concat(characterArray);
   }
-
+//check why characters are below 8 
+// try coding so password is not less than 8 characters by default
   var password = '';
-  for (let i = 8; i < characterCount; i++) {
+  for (let i = 0; i < characterCount; i++) {
     password += result[Math.floor(Math.random() * result.length)];
   }
   return password;

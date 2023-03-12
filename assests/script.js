@@ -1,9 +1,3 @@
-var enter;
-var confirmNumber;
-var confirmCharacter;
-var confirmLower;
-var confrimUpper;
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -13,11 +7,27 @@ function generatePassword(){
   var numberArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   var characterArray = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')',];
   var charactercount = promt ('how many characters you want between 8-128?');
+
+  var result = [];
+  var user = [];
   var numbers = prompt ('how many numbers?');
   var uppercase = prompt ('how many uppercase?');
   var lowercase = prompt ('how many lowercase?');
   var specialCharacters = prompt ('how many special characters?');
+  if (numbers){
+    result = result.concat(numberArray); 
+  }
+  if (uppercase){
+    result = result.concat(upperArray);
+  }
+  if (lowercase){
+    result = result.concat(lowerArray);
+  }
+  if (characterArray){
+    result = result.concat(characterArray);
+  }
   
+   
 }
 // Write password to the #password input
 function writePassword() {

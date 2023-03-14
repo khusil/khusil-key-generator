@@ -18,4 +18,4 @@ filling in required details
 ## link to git lab url
      
      
-     https://github.com/khusil/khusil-key-generator.git
+
